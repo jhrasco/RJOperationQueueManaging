@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7555A66B199CBDE8008F536B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7555A66A199CBDE8008F536B /* Foundation.framework */; };
+		7555A66D199CBDE8008F536B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7555A66C199CBDE8008F536B /* CoreGraphics.framework */; };
+		7555A66F199CBDE8008F536B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7555A66E199CBDE8008F536B /* UIKit.framework */; };
+		7555A675199CBDE8008F536B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7555A673199CBDE8008F536B /* InfoPlist.strings */; };
+		7555A677199CBDE8008F536B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A676199CBDE8008F536B /* main.m */; };
+		7555A67B199CBDE8008F536B /* RJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A67A199CBDE8008F536B /* RJAppDelegate.m */; };
+		7555A67E199CBDE8008F536B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7555A67C199CBDE8008F536B /* Main.storyboard */; };
+		7555A681199CBDE8008F536B /* RJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A680199CBDE8008F536B /* RJViewController.m */; };
+		7555A683199CBDE8008F536B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7555A682199CBDE8008F536B /* Images.xcassets */; };
+		7555A68A199CBDE8008F536B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7555A689199CBDE8008F536B /* XCTest.framework */; };
+		7555A68B199CBDE8008F536B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7555A66A199CBDE8008F536B /* Foundation.framework */; };
+		7555A68C199CBDE8008F536B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7555A66E199CBDE8008F536B /* UIKit.framework */; };
+		7555A694199CBDE8008F536B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7555A692199CBDE8008F536B /* InfoPlist.strings */; };
+		7555A696199CBDE8008F536B /* operationQueueManagingDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A695199CBDE8008F536B /* operationQueueManagingDemoTests.m */; };
+		7555A6D3199CBE1C008F536B /* RJArraySearchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6A1199CBE1C008F536B /* RJArraySearchOperation.m */; };
+		7555A6D4199CBE1C008F536B /* RJAsynchronousOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6A3199CBE1C008F536B /* RJAsynchronousOperation.m */; };
+		7555A6D5199CBE1C008F536B /* RJCoreDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6A5199CBE1C008F536B /* RJCoreDataOperation.m */; };
+		7555A6D6199CBE1C008F536B /* RJDebugAllOperationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6A7199CBE1C008F536B /* RJDebugAllOperationsViewController.m */; };
+		7555A6D7199CBE1C008F536B /* RJDebugAllOperationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7555A6A8199CBE1C008F536B /* RJDebugAllOperationsViewController.xib */; };
+		7555A6D8199CBE1C008F536B /* RJDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6AA199CBE1C008F536B /* RJDebugViewController.m */; };
+		7555A6D9199CBE1C008F536B /* RJDebugViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7555A6AB199CBE1C008F536B /* RJDebugViewController.xib */; };
+		7555A6DA199CBE1C008F536B /* RJDebugViewTypeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6AD199CBE1C008F536B /* RJDebugViewTypeInfo.m */; };
+		7555A6DB199CBE1C008F536B /* RJOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6AF199CBE1C008F536B /* RJOperation.m */; };
+		7555A6DC199CBE1C008F536B /* RJOperationDebugTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6B2199CBE1C008F536B /* RJOperationDebugTableCell.m */; };
+		7555A6DD199CBE1C008F536B /* RJOperationDebugTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7555A6B3199CBE1C008F536B /* RJOperationDebugTableCell.xib */; };
+		7555A6DE199CBE1C008F536B /* RJOperationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6B5199CBE1C008F536B /* RJOperationGroup.m */; };
+		7555A6DF199CBE1C008F536B /* RJOperationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6B8199CBE1C008F536B /* RJOperationInfo.m */; };
+		7555A6E0199CBE1C008F536B /* RJOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6BA199CBE1C008F536B /* RJOperationQueue.m */; };
+		7555A6E1199CBE1C008F536B /* RJOperationQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6BC199CBE1C008F536B /* RJOperationQueueManager.m */; };
+		7555A6E2199CBE1C008F536B /* RJRequestCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6BF199CBE1C008F536B /* RJRequestCategories.m */; };
+		7555A6E3199CBE1C008F536B /* RJRequestCommonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6C1199CBE1C008F536B /* RJRequestCommonData.m */; };
+		7555A6E4199CBE1C008F536B /* RJRequestConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6C3199CBE1C008F536B /* RJRequestConstants.m */; };
+		7555A6E5199CBE1C008F536B /* RJRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6C5199CBE1C008F536B /* RJRequestOperation.m */; };
+		7555A6E6199CBE1C008F536B /* RJRequestOperationDebugTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6C7199CBE1C008F536B /* RJRequestOperationDebugTableCell.m */; };
+		7555A6E7199CBE1C008F536B /* RJRequestOperationDebugTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7555A6C8199CBE1C008F536B /* RJRequestOperationDebugTableCell.xib */; };
+		7555A6E8199CBE1C008F536B /* RJRequestOperationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6CB199CBE1C008F536B /* RJRequestOperationInfo.m */; };
+		7555A6E9199CBE1C008F536B /* RJSerialOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6CE199CBE1C008F536B /* RJSerialOperationQueue.m */; };
+		7555A6EA199CBE1C008F536B /* RJSynchronousOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6D0199CBE1C008F536B /* RJSynchronousOperation.m */; };
+		7555A6EB199CBE1C008F536B /* RJTimeDelayOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7555A6D2199CBE1C008F536B /* RJTimeDelayOperation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7555A68D199CBDE8008F536B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7555A65F199CBDE8008F536B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7555A666199CBDE8008F536B;
+			remoteInfo = operationQueueManagingDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7555A667199CBDE8008F536B /* operationQueueManagingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = operationQueueManagingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7555A66A199CBDE8008F536B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7555A66C199CBDE8008F536B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7555A66E199CBDE8008F536B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7555A672199CBDE8008F536B /* operationQueueManagingDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "operationQueueManagingDemo-Info.plist"; sourceTree = "<group>"; };
+		7555A674199CBDE8008F536B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7555A676199CBDE8008F536B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7555A678199CBDE8008F536B /* operationQueueManagingDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "operationQueueManagingDemo-Prefix.pch"; sourceTree = "<group>"; };
+		7555A679199CBDE8008F536B /* RJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAppDelegate.h; sourceTree = "<group>"; };
+		7555A67A199CBDE8008F536B /* RJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAppDelegate.m; sourceTree = "<group>"; };
+		7555A67D199CBDE8008F536B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7555A67F199CBDE8008F536B /* RJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJViewController.h; sourceTree = "<group>"; };
+		7555A680199CBDE8008F536B /* RJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJViewController.m; sourceTree = "<group>"; };
+		7555A682199CBDE8008F536B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7555A688199CBDE8008F536B /* operationQueueManagingDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = operationQueueManagingDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7555A689199CBDE8008F536B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7555A691199CBDE8008F536B /* operationQueueManagingDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "operationQueueManagingDemoTests-Info.plist"; sourceTree = "<group>"; };
+		7555A693199CBDE8008F536B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7555A695199CBDE8008F536B /* operationQueueManagingDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = operationQueueManagingDemoTests.m; sourceTree = "<group>"; };
+		7555A6A0199CBE1C008F536B /* RJArraySearchOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJArraySearchOperation.h; sourceTree = "<group>"; };
+		7555A6A1199CBE1C008F536B /* RJArraySearchOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJArraySearchOperation.m; sourceTree = "<group>"; };
+		7555A6A2199CBE1C008F536B /* RJAsynchronousOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJAsynchronousOperation.h; sourceTree = "<group>"; };
+		7555A6A3199CBE1C008F536B /* RJAsynchronousOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJAsynchronousOperation.m; sourceTree = "<group>"; };
+		7555A6A4199CBE1C008F536B /* RJCoreDataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJCoreDataOperation.h; sourceTree = "<group>"; };
+		7555A6A5199CBE1C008F536B /* RJCoreDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJCoreDataOperation.m; sourceTree = "<group>"; };
+		7555A6A6199CBE1C008F536B /* RJDebugAllOperationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJDebugAllOperationsViewController.h; sourceTree = "<group>"; };
+		7555A6A7199CBE1C008F536B /* RJDebugAllOperationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJDebugAllOperationsViewController.m; sourceTree = "<group>"; };
+		7555A6A8199CBE1C008F536B /* RJDebugAllOperationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RJDebugAllOperationsViewController.xib; sourceTree = "<group>"; };
+		7555A6A9199CBE1C008F536B /* RJDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJDebugViewController.h; sourceTree = "<group>"; };
+		7555A6AA199CBE1C008F536B /* RJDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJDebugViewController.m; sourceTree = "<group>"; };
+		7555A6AB199CBE1C008F536B /* RJDebugViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RJDebugViewController.xib; sourceTree = "<group>"; };
+		7555A6AC199CBE1C008F536B /* RJDebugViewTypeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJDebugViewTypeInfo.h; sourceTree = "<group>"; };
+		7555A6AD199CBE1C008F536B /* RJDebugViewTypeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJDebugViewTypeInfo.m; sourceTree = "<group>"; };
+		7555A6AE199CBE1C008F536B /* RJOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJOperation.h; sourceTree = "<group>"; };
+		7555A6AF199CBE1C008F536B /* RJOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJOperation.m; sourceTree = "<group>"; };
+		7555A6B0199CBE1C008F536B /* RJOperationDebugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJOperationDebugging.h; sourceTree = "<group>"; };
+		7555A6B1199CBE1C008F536B /* RJOperationDebugTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJOperationDebugTableCell.h; sourceTree = "<group>"; };
+		7555A6B2199CBE1C008F536B /* RJOperationDebugTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJOperationDebugTableCell.m; sourceTree = "<group>"; };
+		7555A6B3199CBE1C008F536B /* RJOperationDebugTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RJOperationDebugTableCell.xib; sourceTree = "<group>"; };
+		7555A6B4199CBE1C008F536B /* RJOperationGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJOperationGroup.h; sourceTree = "<group>"; };
+		7555A6B5199CBE1C008F536B /* RJOperationGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJOperationGroup.m; sourceTree = "<group>"; };
+		7555A6B6199CBE1C008F536B /* RJOperationGroupProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJOperationGroupProtocol.h; sourceTree = "<group>"; };
+		7555A6B7199CBE1C008F536B /* RJOperationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJOperationInfo.h; sourceTree = "<group>"; };
+		7555A6B8199CBE1C008F536B /* RJOperationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJOperationInfo.m; sourceTree = "<group>"; };
+		7555A6B9199CBE1C008F536B /* RJOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJOperationQueue.h; sourceTree = "<group>"; };
+		7555A6BA199CBE1C008F536B /* RJOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJOperationQueue.m; sourceTree = "<group>"; };
+		7555A6BB199CBE1C008F536B /* RJOperationQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJOperationQueueManager.h; sourceTree = "<group>"; };
+		7555A6BC199CBE1C008F536B /* RJOperationQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJOperationQueueManager.m; sourceTree = "<group>"; };
+		7555A6BD199CBE1C008F536B /* RJOperationQueueManaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJOperationQueueManaging.h; sourceTree = "<group>"; };
+		7555A6BE199CBE1C008F536B /* RJRequestCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRequestCategories.h; sourceTree = "<group>"; };
+		7555A6BF199CBE1C008F536B /* RJRequestCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRequestCategories.m; sourceTree = "<group>"; };
+		7555A6C0199CBE1C008F536B /* RJRequestCommonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRequestCommonData.h; sourceTree = "<group>"; };
+		7555A6C1199CBE1C008F536B /* RJRequestCommonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRequestCommonData.m; sourceTree = "<group>"; };
+		7555A6C2199CBE1C008F536B /* RJRequestConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRequestConstants.h; sourceTree = "<group>"; };
+		7555A6C3199CBE1C008F536B /* RJRequestConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRequestConstants.m; sourceTree = "<group>"; };
+		7555A6C4199CBE1C008F536B /* RJRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRequestOperation.h; sourceTree = "<group>"; };
+		7555A6C5199CBE1C008F536B /* RJRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRequestOperation.m; sourceTree = "<group>"; };
+		7555A6C6199CBE1C008F536B /* RJRequestOperationDebugTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRequestOperationDebugTableCell.h; sourceTree = "<group>"; };
+		7555A6C7199CBE1C008F536B /* RJRequestOperationDebugTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRequestOperationDebugTableCell.m; sourceTree = "<group>"; };
+		7555A6C8199CBE1C008F536B /* RJRequestOperationDebugTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RJRequestOperationDebugTableCell.xib; sourceTree = "<group>"; };
+		7555A6C9199CBE1C008F536B /* RJRequestOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRequestOperationDelegate.h; sourceTree = "<group>"; };
+		7555A6CA199CBE1C008F536B /* RJRequestOperationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRequestOperationInfo.h; sourceTree = "<group>"; };
+		7555A6CB199CBE1C008F536B /* RJRequestOperationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRequestOperationInfo.m; sourceTree = "<group>"; };
+		7555A6CC199CBE1C008F536B /* RJRequestTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRequestTypes.h; sourceTree = "<group>"; };
+		7555A6CD199CBE1C008F536B /* RJSerialOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJSerialOperationQueue.h; sourceTree = "<group>"; };
+		7555A6CE199CBE1C008F536B /* RJSerialOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJSerialOperationQueue.m; sourceTree = "<group>"; };
+		7555A6CF199CBE1C008F536B /* RJSynchronousOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJSynchronousOperation.h; sourceTree = "<group>"; };
+		7555A6D0199CBE1C008F536B /* RJSynchronousOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJSynchronousOperation.m; sourceTree = "<group>"; };
+		7555A6D1199CBE1C008F536B /* RJTimeDelayOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJTimeDelayOperation.h; sourceTree = "<group>"; };
+		7555A6D2199CBE1C008F536B /* RJTimeDelayOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJTimeDelayOperation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7555A664199CBDE8008F536B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7555A66D199CBDE8008F536B /* CoreGraphics.framework in Frameworks */,
+				7555A66F199CBDE8008F536B /* UIKit.framework in Frameworks */,
+				7555A66B199CBDE8008F536B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7555A685199CBDE8008F536B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7555A68A199CBDE8008F536B /* XCTest.framework in Frameworks */,
+				7555A68C199CBDE8008F536B /* UIKit.framework in Frameworks */,
+				7555A68B199CBDE8008F536B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7555A65E199CBDE8008F536B = {
+			isa = PBXGroup;
+			children = (
+				7555A69F199CBE1C008F536B /* RJOperationQueueManaging */,
+				7555A670199CBDE8008F536B /* operationQueueManagingDemo */,
+				7555A68F199CBDE8008F536B /* operationQueueManagingDemoTests */,
+				7555A669199CBDE8008F536B /* Frameworks */,
+				7555A668199CBDE8008F536B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7555A668199CBDE8008F536B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7555A667199CBDE8008F536B /* operationQueueManagingDemo.app */,
+				7555A688199CBDE8008F536B /* operationQueueManagingDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7555A669199CBDE8008F536B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7555A66A199CBDE8008F536B /* Foundation.framework */,
+				7555A66C199CBDE8008F536B /* CoreGraphics.framework */,
+				7555A66E199CBDE8008F536B /* UIKit.framework */,
+				7555A689199CBDE8008F536B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7555A670199CBDE8008F536B /* operationQueueManagingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7555A679199CBDE8008F536B /* RJAppDelegate.h */,
+				7555A67A199CBDE8008F536B /* RJAppDelegate.m */,
+				7555A67C199CBDE8008F536B /* Main.storyboard */,
+				7555A67F199CBDE8008F536B /* RJViewController.h */,
+				7555A680199CBDE8008F536B /* RJViewController.m */,
+				7555A682199CBDE8008F536B /* Images.xcassets */,
+				7555A671199CBDE8008F536B /* Supporting Files */,
+			);
+			path = operationQueueManagingDemo;
+			sourceTree = "<group>";
+		};
+		7555A671199CBDE8008F536B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7555A672199CBDE8008F536B /* operationQueueManagingDemo-Info.plist */,
+				7555A673199CBDE8008F536B /* InfoPlist.strings */,
+				7555A676199CBDE8008F536B /* main.m */,
+				7555A678199CBDE8008F536B /* operationQueueManagingDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7555A68F199CBDE8008F536B /* operationQueueManagingDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7555A695199CBDE8008F536B /* operationQueueManagingDemoTests.m */,
+				7555A690199CBDE8008F536B /* Supporting Files */,
+			);
+			path = operationQueueManagingDemoTests;
+			sourceTree = "<group>";
+		};
+		7555A690199CBDE8008F536B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7555A691199CBDE8008F536B /* operationQueueManagingDemoTests-Info.plist */,
+				7555A692199CBDE8008F536B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7555A69F199CBE1C008F536B /* RJOperationQueueManaging */ = {
+			isa = PBXGroup;
+			children = (
+				7555A6A0199CBE1C008F536B /* RJArraySearchOperation.h */,
+				7555A6A1199CBE1C008F536B /* RJArraySearchOperation.m */,
+				7555A6A2199CBE1C008F536B /* RJAsynchronousOperation.h */,
+				7555A6A3199CBE1C008F536B /* RJAsynchronousOperation.m */,
+				7555A6A4199CBE1C008F536B /* RJCoreDataOperation.h */,
+				7555A6A5199CBE1C008F536B /* RJCoreDataOperation.m */,
+				7555A6A6199CBE1C008F536B /* RJDebugAllOperationsViewController.h */,
+				7555A6A7199CBE1C008F536B /* RJDebugAllOperationsViewController.m */,
+				7555A6A8199CBE1C008F536B /* RJDebugAllOperationsViewController.xib */,
+				7555A6A9199CBE1C008F536B /* RJDebugViewController.h */,
+				7555A6AA199CBE1C008F536B /* RJDebugViewController.m */,
+				7555A6AB199CBE1C008F536B /* RJDebugViewController.xib */,
+				7555A6AC199CBE1C008F536B /* RJDebugViewTypeInfo.h */,
+				7555A6AD199CBE1C008F536B /* RJDebugViewTypeInfo.m */,
+				7555A6AE199CBE1C008F536B /* RJOperation.h */,
+				7555A6AF199CBE1C008F536B /* RJOperation.m */,
+				7555A6B0199CBE1C008F536B /* RJOperationDebugging.h */,
+				7555A6B1199CBE1C008F536B /* RJOperationDebugTableCell.h */,
+				7555A6B2199CBE1C008F536B /* RJOperationDebugTableCell.m */,
+				7555A6B3199CBE1C008F536B /* RJOperationDebugTableCell.xib */,
+				7555A6B4199CBE1C008F536B /* RJOperationGroup.h */,
+				7555A6B5199CBE1C008F536B /* RJOperationGroup.m */,
+				7555A6B6199CBE1C008F536B /* RJOperationGroupProtocol.h */,
+				7555A6B7199CBE1C008F536B /* RJOperationInfo.h */,
+				7555A6B8199CBE1C008F536B /* RJOperationInfo.m */,
+				7555A6B9199CBE1C008F536B /* RJOperationQueue.h */,
+				7555A6BA199CBE1C008F536B /* RJOperationQueue.m */,
+				7555A6BB199CBE1C008F536B /* RJOperationQueueManager.h */,
+				7555A6BC199CBE1C008F536B /* RJOperationQueueManager.m */,
+				7555A6BD199CBE1C008F536B /* RJOperationQueueManaging.h */,
+				7555A6BE199CBE1C008F536B /* RJRequestCategories.h */,
+				7555A6BF199CBE1C008F536B /* RJRequestCategories.m */,
+				7555A6C0199CBE1C008F536B /* RJRequestCommonData.h */,
+				7555A6C1199CBE1C008F536B /* RJRequestCommonData.m */,
+				7555A6C2199CBE1C008F536B /* RJRequestConstants.h */,
+				7555A6C3199CBE1C008F536B /* RJRequestConstants.m */,
+				7555A6C4199CBE1C008F536B /* RJRequestOperation.h */,
+				7555A6C5199CBE1C008F536B /* RJRequestOperation.m */,
+				7555A6C6199CBE1C008F536B /* RJRequestOperationDebugTableCell.h */,
+				7555A6C7199CBE1C008F536B /* RJRequestOperationDebugTableCell.m */,
+				7555A6C8199CBE1C008F536B /* RJRequestOperationDebugTableCell.xib */,
+				7555A6C9199CBE1C008F536B /* RJRequestOperationDelegate.h */,
+				7555A6CA199CBE1C008F536B /* RJRequestOperationInfo.h */,
+				7555A6CB199CBE1C008F536B /* RJRequestOperationInfo.m */,
+				7555A6CC199CBE1C008F536B /* RJRequestTypes.h */,
+				7555A6CD199CBE1C008F536B /* RJSerialOperationQueue.h */,
+				7555A6CE199CBE1C008F536B /* RJSerialOperationQueue.m */,
+				7555A6CF199CBE1C008F536B /* RJSynchronousOperation.h */,
+				7555A6D0199CBE1C008F536B /* RJSynchronousOperation.m */,
+				7555A6D1199CBE1C008F536B /* RJTimeDelayOperation.h */,
+				7555A6D2199CBE1C008F536B /* RJTimeDelayOperation.m */,
+			);
+			name = RJOperationQueueManaging;
+			path = operationQueueManagingDemo/RJOperationQueueManaging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7555A666199CBDE8008F536B /* operationQueueManagingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7555A699199CBDE8008F536B /* Build configuration list for PBXNativeTarget "operationQueueManagingDemo" */;
+			buildPhases = (
+				7555A663199CBDE8008F536B /* Sources */,
+				7555A664199CBDE8008F536B /* Frameworks */,
+				7555A665199CBDE8008F536B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = operationQueueManagingDemo;
+			productName = operationQueueManagingDemo;
+			productReference = 7555A667199CBDE8008F536B /* operationQueueManagingDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7555A687199CBDE8008F536B /* operationQueueManagingDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7555A69C199CBDE8008F536B /* Build configuration list for PBXNativeTarget "operationQueueManagingDemoTests" */;
+			buildPhases = (
+				7555A684199CBDE8008F536B /* Sources */,
+				7555A685199CBDE8008F536B /* Frameworks */,
+				7555A686199CBDE8008F536B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7555A68E199CBDE8008F536B /* PBXTargetDependency */,
+			);
+			name = operationQueueManagingDemoTests;
+			productName = operationQueueManagingDemoTests;
+			productReference = 7555A688199CBDE8008F536B /* operationQueueManagingDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7555A65F199CBDE8008F536B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RJ;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Jake;
+				TargetAttributes = {
+					7555A687199CBDE8008F536B = {
+						TestTargetID = 7555A666199CBDE8008F536B;
+					};
+				};
+			};
+			buildConfigurationList = 7555A662199CBDE8008F536B /* Build configuration list for PBXProject "operationQueueManagingDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7555A65E199CBDE8008F536B;
+			productRefGroup = 7555A668199CBDE8008F536B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7555A666199CBDE8008F536B /* operationQueueManagingDemo */,
+				7555A687199CBDE8008F536B /* operationQueueManagingDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7555A665199CBDE8008F536B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7555A6DD199CBE1C008F536B /* RJOperationDebugTableCell.xib in Resources */,
+				7555A683199CBDE8008F536B /* Images.xcassets in Resources */,
+				7555A675199CBDE8008F536B /* InfoPlist.strings in Resources */,
+				7555A6D7199CBE1C008F536B /* RJDebugAllOperationsViewController.xib in Resources */,
+				7555A6E7199CBE1C008F536B /* RJRequestOperationDebugTableCell.xib in Resources */,
+				7555A67E199CBDE8008F536B /* Main.storyboard in Resources */,
+				7555A6D9199CBE1C008F536B /* RJDebugViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7555A686199CBDE8008F536B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7555A694199CBDE8008F536B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7555A663199CBDE8008F536B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7555A67B199CBDE8008F536B /* RJAppDelegate.m in Sources */,
+				7555A6E3199CBE1C008F536B /* RJRequestCommonData.m in Sources */,
+				7555A6E0199CBE1C008F536B /* RJOperationQueue.m in Sources */,
+				7555A6D3199CBE1C008F536B /* RJArraySearchOperation.m in Sources */,
+				7555A6EB199CBE1C008F536B /* RJTimeDelayOperation.m in Sources */,
+				7555A677199CBDE8008F536B /* main.m in Sources */,
+				7555A6DE199CBE1C008F536B /* RJOperationGroup.m in Sources */,
+				7555A681199CBDE8008F536B /* RJViewController.m in Sources */,
+				7555A6D8199CBE1C008F536B /* RJDebugViewController.m in Sources */,
+				7555A6DF199CBE1C008F536B /* RJOperationInfo.m in Sources */,
+				7555A6E1199CBE1C008F536B /* RJOperationQueueManager.m in Sources */,
+				7555A6D5199CBE1C008F536B /* RJCoreDataOperation.m in Sources */,
+				7555A6DA199CBE1C008F536B /* RJDebugViewTypeInfo.m in Sources */,
+				7555A6E2199CBE1C008F536B /* RJRequestCategories.m in Sources */,
+				7555A6EA199CBE1C008F536B /* RJSynchronousOperation.m in Sources */,
+				7555A6E5199CBE1C008F536B /* RJRequestOperation.m in Sources */,
+				7555A6E8199CBE1C008F536B /* RJRequestOperationInfo.m in Sources */,
+				7555A6E6199CBE1C008F536B /* RJRequestOperationDebugTableCell.m in Sources */,
+				7555A6E4199CBE1C008F536B /* RJRequestConstants.m in Sources */,
+				7555A6D6199CBE1C008F536B /* RJDebugAllOperationsViewController.m in Sources */,
+				7555A6D4199CBE1C008F536B /* RJAsynchronousOperation.m in Sources */,
+				7555A6DB199CBE1C008F536B /* RJOperation.m in Sources */,
+				7555A6DC199CBE1C008F536B /* RJOperationDebugTableCell.m in Sources */,
+				7555A6E9199CBE1C008F536B /* RJSerialOperationQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7555A684199CBDE8008F536B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7555A696199CBDE8008F536B /* operationQueueManagingDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7555A68E199CBDE8008F536B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7555A666199CBDE8008F536B /* operationQueueManagingDemo */;
+			targetProxy = 7555A68D199CBDE8008F536B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7555A673199CBDE8008F536B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7555A674199CBDE8008F536B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7555A67C199CBDE8008F536B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7555A67D199CBDE8008F536B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7555A692199CBDE8008F536B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7555A693199CBDE8008F536B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7555A697199CBDE8008F536B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7555A698199CBDE8008F536B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7555A69A199CBDE8008F536B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "operationQueueManagingDemo/operationQueueManagingDemo-Prefix.pch";
+				INFOPLIST_FILE = "operationQueueManagingDemo/operationQueueManagingDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7555A69B199CBDE8008F536B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "operationQueueManagingDemo/operationQueueManagingDemo-Prefix.pch";
+				INFOPLIST_FILE = "operationQueueManagingDemo/operationQueueManagingDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7555A69D199CBDE8008F536B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/operationQueueManagingDemo.app/operationQueueManagingDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "operationQueueManagingDemo/operationQueueManagingDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "operationQueueManagingDemoTests/operationQueueManagingDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7555A69E199CBDE8008F536B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/operationQueueManagingDemo.app/operationQueueManagingDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "operationQueueManagingDemo/operationQueueManagingDemo-Prefix.pch";
+				INFOPLIST_FILE = "operationQueueManagingDemoTests/operationQueueManagingDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7555A662199CBDE8008F536B /* Build configuration list for PBXProject "operationQueueManagingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7555A697199CBDE8008F536B /* Debug */,
+				7555A698199CBDE8008F536B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7555A699199CBDE8008F536B /* Build configuration list for PBXNativeTarget "operationQueueManagingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7555A69A199CBDE8008F536B /* Debug */,
+				7555A69B199CBDE8008F536B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7555A69C199CBDE8008F536B /* Build configuration list for PBXNativeTarget "operationQueueManagingDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7555A69D199CBDE8008F536B /* Debug */,
+				7555A69E199CBDE8008F536B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7555A65F199CBDE8008F536B /* Project object */;
+}

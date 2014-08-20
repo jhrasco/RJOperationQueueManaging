@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/jhrasco/RJOperationQueueManaging"
   s.license      = "MIT"
   s.author       = { "Ryan Jake Castro" => "jcastro@stratpoint.com" }
-  # s.platform   = :ios
+  # s.platform   = :ios, "6.0"
   s.source       = { :git => "https://github.com/jhrasco/RJOperationQueueManaging.git", :tag => s.version.to_s }
   s.source_files  = "operationQueueManagingDemo/RJOperationQueueManaging"
   s.requires_arc = true

@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Ryan Jake. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "RJRequestTypes.h"
 

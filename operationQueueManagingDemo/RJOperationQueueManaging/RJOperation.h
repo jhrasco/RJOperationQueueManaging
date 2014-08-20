@@ -92,9 +92,9 @@
 - (Class)operationInfoClass;
 + (NSDictionary *)operationStateLookUpTable;
 
-@property (nonatomic, weak)					id							operationDelegate;
-@property (nonatomic, weak)					RJOperationQueue *			operationQueue;
-@property (nonatomic, weak)					RJOperationGroup *			operationGroup;
+@property (nonatomic, __unsafe_unretained)					id							operationDelegate;
+@property (nonatomic, __unsafe_unretained)					RJOperationQueue *			operationQueue;
+@property (nonatomic, __unsafe_unretained)					RJOperationGroup *			operationGroup;
 @property (nonatomic, readonly, copy)		RJOperationBeginBlock		operationBeginBlock;
 @property (nonatomic, readonly, copy)		RJOperationCompletionBlock	operationCompletionBlock;
 @property (nonatomic, readonly, copy)		RJOperationMainBlock		operationMainBlock;

@@ -47,9 +47,9 @@
 
 @interface RJOperation : NSOperation {
 
-	__weak				id							_operationDelegate;
-	__weak RJOperationQueue *						_operationQueue;
-	__weak RJOperationGroup *						_operationGroup;
+	__unsafe_unretained				id							_operationDelegate;
+	__unsafe_unretained RJOperationQueue *						_operationQueue;
+	__unsafe_unretained RJOperationGroup *						_operationGroup;
 	RJOperationBeginBlock							_operationBeginBlock;
 	RJOperationCompletionBlock						_operationCompletionBlock;
 	RJOperationMainBlock							_operationMainBlock;
